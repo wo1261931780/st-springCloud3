@@ -7,32 +7,7 @@
     <list default="true" id="d3fdc4fd-826d-44b4-b4b8-bd9d642cdeb1" name="更改" comment="">
       <change afterPath="$PROJECT_DIR$/st-springCloud2/src/main/java/wo1261931780/stspringCloud2/config/MqConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/st-springCloud2/src/main/java/wo1261931780/stspringCloud2/constants/HotelMqConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/java/wo1261931780/stspringCloud3admin/constants/HotelMqConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/java/wo1261931780/stspringCloud3admin/mapper/HotelMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/java/wo1261931780/stspringCloud3admin/pojo/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/java/wo1261931780/stspringCloud3admin/pojo/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/java/wo1261931780/stspringCloud3admin/service/IHotelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/java/wo1261931780/stspringCloud3admin/service/impl/HotelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/java/wo1261931780/stspringCloud3admin/web/HotelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/resources/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/resources/static/js/axios.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stspringCloud3-admin/src/main/resources/static/js/vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/java/cn/itcast/hotel/HotelAdminApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/java/cn/itcast/hotel/constants/HotelMqConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/java/cn/itcast/hotel/mapper/HotelMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/java/cn/itcast/hotel/pojo/Hotel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/java/cn/itcast/hotel/pojo/PageResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/java/cn/itcast/hotel/service/IHotelService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/java/cn/itcast/hotel/service/impl/HotelService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/java/cn/itcast/hotel/web/HotelController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/resources/static/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/resources/static/js/axios.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/main/resources/static/js/vue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-admin/src/test/java/cn/itcast/hotel/HotelAdminApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/st-springCloud2/src/main/java/wo1261931780/stspringCloud2/mq/HotelListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/st-springCloud2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/st-springCloud2/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/st-springCloud2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/st-springCloud2/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -49,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/st-springCloud2" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -153,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713854244193</updated>
       <workItem from="1713854245871" duration="81000" />
-      <workItem from="1713854335087" duration="1877000" />
+      <workItem from="1713854335087" duration="2182000" />
     </task>
     <servers />
   </component>
