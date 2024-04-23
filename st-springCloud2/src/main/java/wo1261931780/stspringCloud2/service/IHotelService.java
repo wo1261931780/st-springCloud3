@@ -28,7 +28,7 @@ public interface IHotelService extends IService<Hotel> {
 
 	void saveById(Long hotelId);
 
-	void deleteHotelById(long hotelId);
+	void deleteHotelById(long hotelId) throws IOException;
 
-	void insertOrUpdateHotelById(long hotelId);
+	void insertOrUpdateHotelById(long hotelId) throws IOException;
 }

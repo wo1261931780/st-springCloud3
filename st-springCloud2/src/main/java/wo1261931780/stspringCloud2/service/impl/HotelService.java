@@ -4,6 +4,7 @@ package wo1261931780.stspringCloud2.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
@@ -11,6 +12,7 @@ import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.geo.GeoPoint;
 import org.elasticsearch.common.unit.DistanceUnit;
+import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.index.query.functionscore.FunctionScoreQueryBuilder;
@@ -216,15 +218,18 @@ public class HotelService extends ServiceImpl<HotelMapper, Hotel> implements IHo
 	}
 
 	@Override
-	public void deleteHotelById(long hotelId) {
-
+	public void deleteHotelById(long hotelId) throws IOException {
+		DeleteRequest deleteRequest = new DeleteRequest("hotel", String.valueOf(hotelId));
+		restHighLevelClient.delete(deleteRequest,RequestOptions.DEFAULT);
 	}
 
 	@Override
-	public void insertOrUpdateHotelById(long hotelId) {
+	public void insertOrUpdateHotelById(long hotelId) throws IOException {
 		Hotel byId = getById(hotelId);
 		HotelDoc hotelDoc = new HotelDoc();
-		new IndexRequest("hotel").id(byId.getId().toString())
+		IndexRequest indexRequest = new IndexRequest("hotel").id(byId.getId().toString());
+		indexRequest.source(JSON.toJSONString(hotelDoc), XContentType.JSON);
+		restHighLevelClient.index(indexRequest, RequestOptions.DEFAULT);
 
 
 	}

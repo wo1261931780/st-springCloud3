@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 import wo1261931780.stspringCloud2.constants.HotelMqConstants;
 import wo1261931780.stspringCloud2.service.impl.HotelService;
 
+import java.io.IOException;
+
 /**
  * Created by Intellij IDEA.
  * Project:st-springCloud3
@@ -26,13 +28,13 @@ public class HotelListener {
 	 * @param hotelId hotelId
 	 */
 	@RabbitListener(queues = HotelMqConstants.INSERT_QUEUE_NAME)
-	public void listenHotelInsertOrUpdate(long hotelId) {
+	public void listenHotelInsertOrUpdate(long hotelId) throws IOException {
 		hotelService.insertOrUpdateHotelById(hotelId);
 
 	}
 
 	@RabbitListener(queues = HotelMqConstants.DELETE_QUEUE_NAME)
-	public void listenHotelDelete(long hotelId) {
+	public void listenHotelDelete(long hotelId) throws IOException {
 		hotelService.deleteHotelById(hotelId);
 	}
 }

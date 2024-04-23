@@ -51,6 +51,7 @@ public class HotelController {
 		// 新增酒店
 		hotelService.save(hotel);
 		// 发送MQ消息，尽量降低数据量，所以只用id
+		// 其实消息体比较小，也是为了避免占用内存
 		rabbitTemplate.convertAndSend(HotelMqConstants.EXCHANGE_NAME, HotelMqConstants.INSERT_KEY, hotel.getId());
 	}
 
